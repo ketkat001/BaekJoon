@@ -1,3 +1,5 @@
+# 컨베이너 벨트 위의 로봇
+
 N, K = map(int, input().split())
 
 conveyor_belt = list(map(int, input().split()))
@@ -30,7 +32,6 @@ while True:
     if 0 not in robots and conveyor_belt[0] > 0:  # 올라가는 위치에 로봇이 없다면 로봇 삽입
         robots.append(0)
         conveyor_belt[0] -= 1
-
     temp = 0
     for i in range(2*N):
         if conveyor_belt[i] == 0:
